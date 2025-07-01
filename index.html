@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survie Golmon Mod</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, #374151, #1f2937, #111827, #4b5563);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #f9fafb;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .mod-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      border-bottom: 2px solid rgba(255,255,255,0.1);
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .mod-header img {
+      width: 96px;
+      height: 96px;
+      border-radius: 16px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .mod-header h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #fff;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      padding: 0 0.5rem;
+      color: #e5e7eb;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #10b981;
+      color: white;
+      padding: 0.25rem 0.6rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      margin-right: 0.5rem;
+    }
+
+    .info-bar {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .mod-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .mod-header img {
+        width: 72px;
+        height: 72px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="mod-header">
+      <img src="https://raw.githubusercontent.com/SROff23712/SurvieGolmon/refs/heads/main/05102f9687556050359089d4a755aa16.png" alt="Logo du mod" />
+      <div>
+        <h1>Survie Golmon Mod</h1>
+        <div class="info-bar">
+          <span class="tag">NeoForge</span>
+          <span class="tag">Minecraft 1.21.5</span>
+          <span class="tag">Commande</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="description">
+      <p>
+        Ce mod a été spécialement conçu par <strong>_SR_Off_</strong> pour enrichir l'expérience de jeu sur le serveur <strong>SurvieGolmon</strong>.  
+        Il s'agit d'un mod léger et pratique, développé sur mesure pour répondre aux besoins des joueurs de la communauté, tout en restant simple à utiliser.
+      </p>
+      <p>
+        Fonctionnant exclusivement sur la version <strong>Minecraft 1.21.5 avec NeoForge</strong>, ce mod ajoute des commandes essentielles pour la gestion des points de réapparition, facilitant l’organisation sur les serveurs survie et semi-RP.
+      </p>
+      <p>
+        <strong>🎮 Fonctionnalités principales :</strong><br>
+        – <code>/setspawn</code> : Définit le point de spawn global du serveur. <br>
+        – <code>/spawn</code> : Permet à un joueur de se téléporter instantanément au spawn.
+      </p>
+      <p>
+        📌 <strong>Note :</strong> Ce mod ne fonctionne que sur NeoForge 1.21.5.  
+        Aucune compatibilité avec Forge ou Fabric n’est prévue.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
